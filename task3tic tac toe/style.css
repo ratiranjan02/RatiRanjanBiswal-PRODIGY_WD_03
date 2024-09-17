@@ -1,0 +1,104 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("tic\ tac\ 2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(169, 24, 174); 
+    padding: 30px;
+    opacity: 0.79;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+    width: 360px;
+    height: auto; 
+}
+
+.game-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #141719;
+    font-weight: bold;
+    background-color: #ecf0f1;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    border: 4px solid #2980b9;
+    background: #0d59a5; 
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+.cell {
+    background-color: #649027;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    cursor: pointer;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+    height: 100%;
+}
+
+.cell:hover {
+    background-color: #ecf0f1;
+    transform: scale(1.05);
+}
+
+.cell.x {
+    color: #a42517;
+}
+
+.cell.o {
+    color: #4f725e;
+}
+
+.game-status {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #021526;
+}
+
+.game-restart {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #EB3678;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.game-restart:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
